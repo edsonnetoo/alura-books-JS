@@ -7,4 +7,5 @@ async function getBuscarLivrosAPI() {
     livros = await res.json();
     let livrosComDesconto =  aplicarDesconto(livros);
     exibirLivros(livrosComDesconto);
+    console.table(livros);
 }
